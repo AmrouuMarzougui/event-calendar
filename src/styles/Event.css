@@ -6,10 +6,27 @@
   width: 100%;
   z-index: 1;
   overflow: visible;
+  cursor: pointer;
 }
 
 .span-text {
   color: white;
   display: table-cell;
   vertical-align: middle;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.tooltip-event {
+  display: none;
+}
+
+.event-container:hover + .tooltip-event {
+  position: absolute;
+  display: block;
+  background-color: rgb(216, 216, 216);
+  color: black;
+  padding: 10px;
+  z-index: 2;
+  min-width: 200px;
 }

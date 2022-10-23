@@ -7,11 +7,10 @@
 .span-hour {
   border: 1px solid rgb(172, 172, 172);
   display: inline-flex;
-  height: 100px;
+  height: calc(100vh / 13);
 }
 
 .event-content {
-  /* max-width: 300px; */
   display: flex;
   width: 100%;
 }

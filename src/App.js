@@ -1,9 +1,9 @@
-import { Calendar } from "./components/Calendar";
+import { Calendar } from "./components/calendar/Calendar";
 import "./styles/App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-testid="App">
       <Calendar />
     </div>
   );
