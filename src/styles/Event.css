@@ -1,0 +1,15 @@
+.event-container {
+  background-color: rgb(223, 223, 223);
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+  overflow: visible;
+}
+
+.span-text {
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+}
