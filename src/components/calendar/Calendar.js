@@ -19,12 +19,12 @@ export const Calendar = () => {
   }, []);
 
   return (
-    <div className="container" data-testid="calendar">
+    <div className="caledar-container" data-testid="calendar">
       {range(13, 1, 9).map((hour, index) => (
-        <div className="span-hour" key={index} ref={ref}>
+        <div className="hour-content" key={index} ref={ref}>
           <span>{`${hour}:00`}</span>
 
-          <div className="event-content">
+          <div className="event-calendar-content">
             {inputs.map(
               (input) =>
                 areHoursTheSame(input.start.split(":")[0], `${hour}`) && (

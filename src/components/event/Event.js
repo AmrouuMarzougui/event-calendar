@@ -3,7 +3,7 @@ import "../../styles/Event.css";
 
 export const Event = ({ event, height, marginTop, id, className }) => {
   return (
-    <div data-testid="event-input">
+    <div data-testid="event-input" className="event">
       <div
         id={id}
         className={`${className} event-container`}
@@ -12,7 +12,7 @@ export const Event = ({ event, height, marginTop, id, className }) => {
           marginTop: `${marginTop}px`,
         }}
       >
-        <span className="span-text" style={{ lineHeight: `${height}px` }}>
+        <span className="event-content" style={{ lineHeight: `${height}px` }}>
           {event.id}
         </span>
       </div>

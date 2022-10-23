@@ -9,7 +9,11 @@
   cursor: pointer;
 }
 
-.span-text {
+.event {
+  width: 100%;
+}
+
+.event-content {
   color: white;
   display: table-cell;
   vertical-align: middle;
