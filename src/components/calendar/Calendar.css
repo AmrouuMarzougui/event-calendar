@@ -1,0 +1,8 @@
+.calendar-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(1, 1fr) repeat(2, 5fr);
+    grid-template-rows: repeat(156, 1fr);
+}

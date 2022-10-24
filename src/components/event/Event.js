@@ -1,26 +1,16 @@
 import React from "react";
-import "../../styles/Event.css";
+import "./Event.css";
 
-export const Event = ({ event, height, marginTop, id, className }) => {
+export const Event = ({ gridRow, gridColumn, id }) => {
   return (
-    <div data-testid="event-input" className="event">
-      <div
-        id={id}
-        className={`${className} event-container`}
-        style={{
-          height: `${height}px`,
-          marginTop: `${marginTop}px`,
-        }}
-      >
-        <span className="event-content" style={{ lineHeight: `${height}px` }}>
-          {event.id}
-        </span>
-      </div>
-      <div className="tooltip-event">
-        <h5>ID: {event.id}</h5>
-        <h5>Début: {event.start}</h5>
-        <h5>Durée: {event.duration}</h5>
-      </div>
+    <div
+      className="input-event"
+      style={{
+        gridRow: gridRow,
+        gridColumn: gridColumn,
+      }}
+    >
+      <span className="event-content">ID: {id}</span>
     </div>
   );
 };
