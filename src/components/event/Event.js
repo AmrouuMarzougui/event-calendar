@@ -5,6 +5,7 @@ export const Event = ({ gridRow, gridColumn, id }) => {
   return (
     <div
       className="input-event"
+      data-testid="event-input"
       style={{
         gridRow: gridRow,
         gridColumn: gridColumn,

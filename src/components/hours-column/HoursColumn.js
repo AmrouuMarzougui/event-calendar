@@ -6,7 +6,7 @@ export const HoursColumn = ({ hour, index }) => {
         gridRow: `${index * 12 + 1} / 12 span`,
       }}
     >
-      {`${hour}:00`}
+      {hour >= 10 ? `${hour}:00` : `0${hour}:00`}
     </span>
   );
 };
